@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="./Index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="index">
+      <div class="index-container">
+        <h1 class="index-header">Office PostBoard</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Text</th>
+
+              <th>User Name</th>
+
+              <th>CreationDate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://localhost:7145/Post/@post.Key.Id">@post.Key.Header </a></td>
+              <td>@post.Key.Body</td>
+
+              <td>@post.Key.User.UserName</td>
+
+              <td>@post.Key.CreationDate.ToString("yyyy MMMM dd. hh:mm:ss")</td>
+              <td>
+                <a href="/Vote/@post.Key.Id/1"><b>+</b></a>
+              </td>
+              <td><span>@post.Value </span></td>
+              <td>
+                <a href="/Vote/@post.Key.Id/-1"><b>-</b></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

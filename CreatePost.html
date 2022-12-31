@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="./CreatePost.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="createPost">
+      <div class="createPost-container">
+        <h1 class="createPost-header">Create Post</h1>
+        <form class="createPost-form" action="CreatePost" method="post">
+          <label class="createPost-form-label" for="Header">Title:</label>
+          <input class="createPost-form-input" type="text" name="Header" placeholder="Title" />
+
+          <label class="createPost-form-label" for="Body">Text:</label>
+          <input class="createPost-form-input" type="text" name="Body" placeholder="Text" />
+
+          <label class="createPost-form-label checkbox-label" for="UserIncognito"
+            >Post Anonymously?</label
+          >
+          <input
+            class="createPost-form-checkbox"
+            type="checkbox"
+            name="UserIncognito"
+            value="true" />
+
+          <button class="createPost-form-button" type="submit">Create</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

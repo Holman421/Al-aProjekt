@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="./Register.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="register">
+      <div class="register-container">
+        <h1 class="register-header">Register User</h1>
+
+        <form class="register-form" action="Register" method="post">
+          <label class="register-form-label" for="UserName"><b>Enter username</b></label>
+          <input
+            class="register-form-input"
+            type="text"
+            name="UserName"
+            placeholder="User Name"
+            required />
+
+          <label class="register-form-label" for="Name"><b>Enter name</b></label>
+          <input class="register-form-input" type="text" name="Name" placeholder="Name" required />
+
+          <label class="register-form-label" for="Surname"><b>Enter surname</b></label>
+          <input
+            class="register-form-input"
+            type="text"
+            name="Surname"
+            placeholder="Surname"
+            required />
+
+          <label class="register-form-label" for="Email"><b>Enter email</b></label>
+          @* change to type email later*@
+          <input
+            class="register-form-input"
+            type="text"
+            name="Email"
+            placeholder="Email"
+            required />
+
+          <label class="register-form-label" for="Password"><b>Enter password</b></label>
+          @* change to type password later*@
+          <input
+            class="register-form-input"
+            type="text"
+            id="pswd"
+            name="Password"
+            placeholder="Password"
+            required />
+
+          <Button class="register-form-button">Register</Button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

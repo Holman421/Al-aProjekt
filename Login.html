@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="./Login.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="login-container">
+        <h1 class="login-header">Login</h1>
+        <form class="login-form" action="Login" method="post">
+          <label class="login-form-label" for="UserName">User Name:</label>
+
+          <input
+            class="login-form-input"
+            id="UserName"
+            type="text"
+            name="username"
+            placeholder="Username"
+            required />
+          <label class="login-form-label" for="Password">Password:</label>
+
+          <input
+            class="login-form-input"
+            id="Password"
+            type="password"
+            name="password"
+            placeholder="Password"
+            required />
+          <button class="login-form-button">Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

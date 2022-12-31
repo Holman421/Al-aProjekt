@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="./EditPost.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="createUser">
+      <div class="createUser-container">
+        <h1>Edit Post</h1>
+        <form class="createUser-form" action="post" method="post">
+          <input type="hidden" name="Id" value="@Model.Post.Id" />
+
+          <label class="createUser-form-label" for="Header">Title:</label>
+          <input
+            class="createUser-form-input"
+            type="text"
+            id="Header"
+            name="Header"
+            value="@Model.Post.Header"
+            required /><br />
+
+          <label class="createUser-form-label" for="Body">Text:</label>
+          <input
+            class="createUser-form-input"
+            type="text"
+            id="Body"
+            name="Body"
+            value="@Model.Post.Body"
+            required /><br />
+
+          <label class="createUser-form-label " for="UserIncognito">Post Anonymously?</label>
+          <input class="createUser-form-checkbox" type="checkbox" id="UserIncognito" name="UserIncognito" value="true"
+          @(Model.Post.UserIncognito ? "checked" : String.Empty)><br />
+
+          <button class="createUser-form-button" type="submit">Edit post</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
